@@ -1,0 +1,11 @@
+try:
+    angka1 = input("Masukkan angka pertama: ")
+    angka2 = input("Masukkan angka kedua: ")
+    
+    # Konversi ke integer
+    hasil = int(angka1) + int(angka2)
+    
+    print("Hasil penjumlahan:", hasil)
+
+except ValueError:
+    print("Terjadi kesalahan! Pastikan yang dimasukkan adalah angka.")

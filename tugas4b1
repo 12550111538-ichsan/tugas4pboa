@@ -1,0 +1,14 @@
+while True:
+    try:
+        angka1 = input("Masukkan angka pertama (ketik 'q' untuk keluar): ")
+        
+        if angka1.lower() == 'q':
+            break
+        
+        angka2 = input("Masukkan angka kedua: ")
+        
+        hasil = int(angka1) + int(angka2)
+        print("Hasil penjumlahan:", hasil)
+
+    except ValueError:
+        print("Input tidak valid! Harap masukkan angka.\n")
