@@ -1,0 +1,11 @@
+# Membuka file dalam mode append (menambahkan data)
+with open("guest_book.txt", "a") as file:
+    while True:
+        nama = input("Masukkan nama (ketik 'q' untuk keluar): ")
+        
+        if nama.lower() == 'q':
+            break
+        
+        file.write(nama + "\n")
+
+print("Semua nama berhasil disimpan ke guest_book.txt")
